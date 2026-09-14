@@ -45,8 +45,6 @@ de cada una. Las tarjetas de la web se rellenan solas.
 ### Cambiar textos de la página (servicios, hero, formación...)
 Abre `index.html` y busca el texto con Ctrl+F. Edítalo como en un
 Word, con cuidado de no borrar las etiquetas `<...>` que lo rodean.
-En la sección "Mi formación" hay textos entre [corchetes] para
-rellenar con tu universidad y especializaciones.
 
 ### Cambiar las preguntas del test
 En `js/test.js`, al principio, está la lista `preguntas`. Cada
@@ -111,9 +109,9 @@ procesa pagos de ningún tipo: el dinero va de banco a banco.
 Cómo funciona:
 1. La persona pide cita desde el calendario online (las citas
    SOLO se piden ahí: ni por llamada ni por WhatsApp).
-2. Tú confirmas por email y le pides la **garantía de 5€** por
+2. Tú confirmas por email y le pides la **garantía de 10€** por
    Bizum (importe en `garantiaImporte`).
-3. Esos 5€ **se descuentan del precio de la sesión**. Si avisa
+3. Esos 10€ **se descuentan del precio de la sesión**. Si avisa
    con 24 h, se devuelven o se mueven a otra fecha. Si no acude
    sin avisar, no se devuelven. Todo está escrito en el aviso
    legal, sección "Reservas, garantía y cancelaciones".
@@ -153,8 +151,8 @@ partes (canonical, sitemap, robots). Para conectarlo:
 
 ## 3. Lo legal (hazlo una vez y olvídate)
 
-- Rellena todos los `[corchetes]` de `privacidad.html` y
-  `aviso-legal.html`: nombre, NIF, nº de colegiada, dirección, fecha.
+- Rellena todos los `[corchetes]` que queden en `privacidad.html` y
+  `aviso-legal.html`: el NIF y la fecha de actualización.
   **Es obligatorio.**
 - Tu número de colegiada ya sale en el pie de todas las páginas
   (se pone en `js/config.js`).

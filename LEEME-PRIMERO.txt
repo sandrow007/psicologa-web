@@ -3,12 +3,15 @@ Hola Sandro:
 Abre el archivo README.md, ahí está todo explicado paso a paso.
 
 Resumen de 30 segundos:
-1. Edita js/config.js con los datos de tu amiga
-   (email real y nº de colegiada: lo demás ya está puesto).
-2. Rellena los huecos entre [corchetes] en privacidad.html
-   y aviso-legal.html (NIF, dirección, fecha).
-3. Sube TODO el contenido de esta carpeta al repo de GitHub.
-4. Actívala en Settings -> Pages.
+1. Los datos de Ángela ya están integrados: nombre completo,
+   colegiada AN13061, email real, tarifas (55/200/55/80),
+   garantía de 10€ y horario de lunes a viernes 9-14 y 16-21.
+2. Solo quedan dos huecos entre [corchetes]: el NIF (en
+   js/config.js -> fiscal, privacidad.html y aviso-legal.html)
+   y la fecha de actualización de las páginas legales.
+3. Todo está subido al repo de GitHub (sandrow007/psicologa-web).
+4. Para publicarla: Settings -> Pages -> rama main, o conectar
+   psicoangela.com con Cloudflare (guía en guia.html).
 
 Cómo funciona la privacidad:
 - Los formularios NO envían nada a ningún servidor: abren el
@@ -29,7 +32,7 @@ Las citas:
 
 El pago:
 - Bizum al 638 37 25 96. Al confirmar cada cita, Ángela pide la
-  garantía de 5€, que se descuenta de la sesión. Si la persona
+  garantía de 10€, que se descuenta de la sesión. Si la persona
   no acude sin avisar con 24 h, no se devuelve. Todo explicado
   en el aviso legal.
 
