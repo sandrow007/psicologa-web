@@ -1,0 +1,44 @@
+Hola Sandro:
+
+Abre el archivo README.md, ahí está todo explicado paso a paso.
+
+Resumen de 30 segundos:
+1. Edita js/config.js con los datos de tu amiga
+   (email real y nº de colegiada: lo demás ya está puesto).
+2. Rellena los huecos entre [corchetes] en privacidad.html
+   y aviso-legal.html (NIF, dirección, fecha).
+3. Sube TODO el contenido de esta carpeta al repo de GitHub.
+4. Actívala en Settings -> Pages.
+
+Cómo funciona la privacidad:
+- Los formularios NO envían nada a ningún servidor: abren el
+  programa de correo de la visitante con el mensaje ya escrito.
+  El email va directo de su correo al de la psicóloga.
+- El test ocurre entero en el navegador de la visitante.
+- No hay cookies, ni analytics, ni base de datos. Nada se guarda.
+  Lo que no se guarda no se puede perder ni hackear.
+
+Las citas:
+- SOLO se piden desde el calendario online de la web (100% local,
+  sin Cal.com ni nada externo). Ni por llamada ni por WhatsApp:
+  esos canales son solo para dudas.
+- Ángela gestiona su agenda desde el botón "Acceso profesional"
+  del pie de página (usuario y contraseña cifrados con hash,
+  invisibles con F12). Ella navega todo el año; las visitantes,
+  3 semanas.
+
+El pago:
+- Bizum al 638 37 25 96. Al confirmar cada cita, Ángela pide la
+  garantía de 5€, que se descuenta de la sesión. Si la persona
+  no acude sin avisar con 24 h, no se devuelve. Todo explicado
+  en el aviso legal.
+
+Las sesiones online:
+- Por Jitsi Meet (meet.jit.si): gratis, cifrado, sin cuentas ni
+  instalaciones. Ángela crea su sala, pega el enlace en
+  js/config.js y lo envía por email al confirmar cada cita online.
+
+Importante:
+- La web incluye el aviso de emergencias (024 y 112) y deja
+  claro que no es un servicio de urgencias. Consulta para
+  adultos; menores solo con consentimiento de sus tutores.

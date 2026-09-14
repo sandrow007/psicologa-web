@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso legal</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .legal { max-width: 760px; margin: 120px auto 60px; padding: 0 1.5rem; }
+        .legal h1 { color: var(--celeste-oscuro); margin-bottom: 0.5rem; }
+        .legal h2 { color: var(--celeste-oscuro); margin: 2rem 0 0.6rem; font-size: 1.15rem; }
+        .legal p, .legal li { font-size: 0.97rem; margin-bottom: 0.7rem; }
+        .legal ul { padding-left: 1.3rem; }
+        .legal .actualizado { color: #7a8a99; font-size: 0.85rem; }
+        .legal a { color: var(--celeste-oscuro); }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">← Volver a la web</a>
+        <nav><a href="index.html#contacto">Contacto</a></nav>
+    </header>
+
+    <main class="legal">
+        <h1>Aviso legal</h1>
+        <p class="actualizado">Última actualización: [fecha]</p>
+
+        <h2>1. Titular de la web</h2>
+        <p>
+            En cumplimiento de la Ley 34/2002, de Servicios de la Sociedad de la
+            Información y de Comercio Electrónico (LSSI-CE), se informa de que la
+            titular de este sitio web es:
+        </p>
+        <p>
+            Ángela M. M<br>
+            NIF: [NIF/DNI]<br>
+            Colegiada nº: [número] — Colegio Oficial de Psicología de [Andalucía / el que corresponda]<br>
+            Dirección profesional: [dirección de la consulta, ciudad]<br>
+            Email: [email de contacto]
+        </p>
+
+        <h2>2. Objeto</h2>
+        <p>Esta web ofrece información sobre los servicios de psicología de la titular
+        y permite solicitar citas y contactar con la consulta. El contenido es
+        divulgativo: <strong>no sustituye en ningún caso una consulta psicológica
+        individualizada</strong>. El test de orientación de esta web no es un
+        instrumento diagnóstico.</p>
+
+        <h2>3. Propiedad intelectual</h2>
+        <p>Los textos, diseño y contenidos de esta web son titularidad de la
+        responsable. Queda prohibida su reproducción con fines comerciales sin
+        autorización expresa.</p>
+
+        <h2>4. Responsabilidad</h2>
+        <p>La titular no se responsabiliza del mal uso que se haga de los contenidos
+        de esta web ni de los contenidos de los sitios enlazados (WhatsApp),
+        que tienen sus propias condiciones y políticas.</p>
+
+        <h2 id="reservas">5. Reservas, garantía y cancelaciones</h2>
+        <p><strong>Las citas únicamente se solicitan a través del calendario
+        online de esta web.</strong> No se aceptan reservas por llamada
+        telefónica ni por WhatsApp: esos canales son solo para resolver dudas.
+        El calendario online es el único lugar donde se muestran los huecos
+        reales y disponibles.</p>
+        <p>Para confirmar una cita se solicita una <strong>garantía de 5 €</strong>,
+        abonada por Bizum directamente a la titular. Condiciones:</p>
+        <ul>
+            <li>La garantía <strong>se descuenta íntegramente del precio de la
+            sesión</strong>: no es un pago extra.</li>
+            <li><strong>Cancelación o cambio con al menos 24 horas de antelación:</strong>
+            la garantía se devuelve o se traslada a una nueva fecha, a elección de la
+            persona.</li>
+            <li><strong>Si no se acude a la cita sin avisar con 24 horas de
+            antelación, la garantía no se devuelve</strong>, en compensación por el
+            hueco reservado, que otra persona podría haber utilizado.</li>
+            <li>La reserva no es definitiva hasta que la titular la confirma por
+            email o WhatsApp.</li>
+        </ul>
+        <p><strong>Proceso una vez confirmada la cita:</strong></p>
+        <ol>
+            <li>La titular confirma tu cita por email o WhatsApp y te indica cómo
+            abonar la garantía de 5 € por Bizum.</li>
+            <li><strong>Si la sesión es presencial:</strong> acudes a la consulta a
+            la hora acordada. Los 5 € se descuentan del precio de la sesión.</li>
+            <li><strong>Si la sesión es online:</strong> antes de la cita recibirás
+            un enlace único de videollamada de <strong>Jitsi Meet</strong>
+            (meet.jit.si). No necesitas cuenta ni instalar nada: abres el enlace en
+            tu navegador a la hora acordada y entras. Se recomienda un lugar
+            tranquilo, auriculares y buena conexión.</li>
+            <li>Al terminar la sesión abonas el resto del importe por Bizum (la
+            garantía ya queda descontada).</li>
+        </ol>
+
+        <h2>6. Legislación aplicable</h2>
+        <p>Este aviso legal se rige por la legislación española. Para cualquier
+        controversia serán competentes los juzgados de [ciudad], salvo que la norma
+        de protección de consumidores disponga otra cosa.</p>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; <span id="anioFooter">2026</span> · <a href="index.html" style="color:inherit;">Volver a la web</a></p>
+        </div>
+    </footer>
+    <script>document.getElementById("anioFooter").textContent = new Date().getFullYear();</script>
+</body>
+</html>
