@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Guía de la web — cómo funciona y qué falta por hacer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .guia { max-width: 820px; margin: 110px auto 70px; padding: 0 1.5rem; }
+        .guia h1 { color: var(--celeste-oscuro); font-size: 2rem; margin-bottom: 0.4rem; }
+        .guia .sub { color: #7a8a99; margin-bottom: 2.5rem; }
+        .guia h2 {
+            color: var(--celeste-oscuro); font-size: 1.3rem;
+            margin: 2.8rem 0 0.8rem; padding-top: 1.6rem;
+            border-top: 1px solid var(--linea);
+        }
+        .guia h3 { color: var(--gris-texto); font-size: 1.05rem; margin: 1.4rem 0 0.4rem; }
+        .guia p, .guia li { font-size: 0.97rem; margin-bottom: 0.7rem; }
+        .guia ul, .guia ol { padding-left: 1.4rem; }
+        .guia li { margin-bottom: 0.5rem; }
+        .guia a { color: var(--celeste-oscuro); }
+        .guia code {
+            background: var(--celeste-muy-claro); padding: 0.1rem 0.4rem;
+            border-radius: 4px; font-size: 0.88rem; color: var(--celeste-oscuro);
+        }
+        .caja {
+            background: var(--celeste-muy-claro);
+            border-left: 3px solid var(--acento-suave);
+            padding: 1rem 1.3rem; border-radius: 0 10px 10px 0;
+            margin: 1.1rem 0;
+        }
+        .caja.aviso { border-left-color: #e8a8b8; background: #fdf2f5; }
+        .check { list-style: none; padding-left: 0; }
+        .check li { padding-left: 1.8rem; position: relative; }
+        .check li::before {
+            content: "☐"; position: absolute; left: 0;
+            color: var(--celeste-oscuro); font-size: 1.1rem;
+        }
+        .tabla { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.93rem; }
+        .tabla th, .tabla td {
+            text-align: left; padding: 0.6rem 0.8rem;
+            border-bottom: 1px solid var(--linea);
+        }
+        .tabla th { color: var(--celeste-oscuro); }
+        .indice {
+            background: var(--gris-suave); border-radius: 12px;
+            padding: 1.2rem 1.5rem; margin: 1.5rem 0;
+        }
+        .indice a { display: block; padding: 0.25rem 0; text-decoration: none; }
+        .indice a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">← Volver a la web</a>
+        <nav><a href="index.html#contacto">Contacto</a></nav>
+    </header>
+
+    <main class="guia">
+        <h1>Guía de tu web</h1>
+        <p class="sub">Qué tienes entre manos, por qué está hecha así y qué falta para dejarla profesional del todo.</p>
+
+        <div class="indice">
+            <a href="#que-es">1. Qué es esta web</a>
+            <a href="#test">2. Por qué hay un test (y por qué es buena idea)</a>
+            <a href="#privacidad">3. Por qué tanta privacidad</a>
+            <a href="#pendiente">4. Lo que falta por hacer (lista de tareas)</a>
+            <a href="#profesional">5. Para que sea profesional de verdad</a>
+            <a href="#dominio">6. Tu dominio: psicoangela.com</a>
+        </div>
+
+        <h2 id="que-es">1. Qué es esta web</h2>
+        <p>Una página única (lo que se llama <em>one-page</em>) con todo lo que una persona
+        necesita para decidir si te escribe: quién eres, en qué puedes ayudarla, cuánto
+        cuesta y cómo pedir cita. Sin menús complicados ni páginas perdidas.</p>
+        <p>El recorrido está pensado como una conversación:</p>
+        <ol>
+            <li><strong>Portada</strong> — una frase honesta, no un eslogan. La persona se ve reflejada o se va. Mejor eso que engañar a nadie.</li>
+            <li><strong>Servicios</strong> — qué problemas trabajas, dicho en lenguaje de la calle, no de manual.</li>
+            <li><strong>Formación</strong> — aquí es donde demuestras que eres profesional sanitario.</li>
+            <li><strong>Test</strong> — la puerta de entrada suave (abajo te explico por qué).</li>
+            <li><strong>Tarifas</strong> — claras, sin letra pequeña. Ocultar precios genera desconfianza.</li>
+            <li><strong>Citas</strong> — calendario o WhatsApp directo, sin listas de espera.</li>
+            <li><strong>Contacto</strong> — un formulario que no guarda nada de nadie.</li>
+        </ol>
+
+        <h2 id="test">2. Por qué hay un test (y por qué es buena idea)</h2>
+        <p>La mayoría de la gente que necesita terapia tarda <strong>meses</strong> en dar el
+        paso de escribir a un psicólogo. Llamar o mandar un email cuesta: da vergüenza,
+        parece "exagerado", siempre hay una excusa. El test resuelve eso:</p>
+        <ul>
+            <li><strong>Es una puerta baja.</strong> Responder 8 preguntas no compromete a nada. Pero al terminar, la persona ya ha puesto en palabras lo que le pasa — y eso es medio paso dado.</li>
+            <li><strong>Termina en acción.</strong> Al final, el botón de WhatsApp lleva el resultado ya escrito en el mensaje. La persona solo tiene que darle a enviar.</li>
+            <li><strong>Es privado de verdad.</strong> El test se ejecuta entero en el navegador de la visitante. Las respuestas no salen de su dispositivo. Ni tú las ves, ni la web las guarda.</li>
+        </ul>
+        <div class="caja aviso">
+            <strong>Importante (y la web ya lo dice):</strong> el test es de
+            <em>orientación</em>, no un diagnóstico. El Colegio Oficial de Psicología
+            no permite diagnosticar a través de una web, y anunciar tests como
+            diagnósticos puede traerte problemas. Tal como está redactado, estás cubierta.
+        </div>
+
+        <h2 id="privacidad">3. Por qué tanta privacidad</h2>
+        <p>En psicología los datos son de <strong>categoría especial</strong> según el RGPD
+        (artículo 9): salud mental. La web está montada para que ese problema simplemente
+        no exista:</p>
+        <ul>
+            <li>El formulario <strong>no envía nada a ningún servidor</strong>: abre el programa de correo de la propia persona con el mensaje ya escrito. El email viaja de su correo al tuyo, como cualquier email normal. Si respondes, le llega a su bandeja habitual.</li>
+            <li>No hay base de datos, ni cookies, ni Google Analytics, ni píxeles de Facebook. Nada que proteger porque no hay nada guardado.</li>
+            <li>Nadie vende, cede ni comparte datos. Es la regla número uno y está escrita en la política de privacidad.</li>
+        </ul>
+        <div class="caja">
+            Esto además es un argumento comercial: en una profesión donde la gente
+            cuenta lo que no le cuenta a nadie, poder decir "mi web no guarda nada
+            de ti" genera confianza inmediata.
+        </div>
+
+        <h2 id="pendiente">4. Lo que falta por hacer (lista de tareas)</h2>
+        <p>Marca cada casilla cuando la tengas. Todo se hace editando archivos con VS Code:</p>
+        <ul class="check">
+            <li>Abrir <code>js/config.js</code> y poner: nombre real, nº de colegiada, email, teléfono y ciudad.</li>
+            <li>Revisar los precios en <code>js/config.js</code> (apartado <code>tarifas</code>).</li>
+            <li>Rellenar todos los <code>[corchetes]</code> de <code>privacidad.html</code> y <code>aviso-legal.html</code>: nombre, NIF, nº de colegiada, dirección, fecha. <strong>Esto es obligatorio por ley.</strong></li>
+            <li>En <code>index.html</code>, sección "Mi formación": poner la universidad real, el máster real y las especializaciones reales.</li>
+            <li>Las citas ya funcionan solas: calendario online 100% local (sin Cal.com ni nada externo). Tú lo gestionas desde el botón "Acceso profesional" del pie de página: bloqueas huecos, copias la configuración y la pegas en <code>js/config.js</code>. Las citas SOLO se piden por ese calendario, nunca por llamada ni WhatsApp.</li>
+            <li>El pago ya está decidido: <strong>Bizum al 638 37 25 96</strong>. Al confirmar cada cita pides la garantía de 5€ (se descuenta de la sesión; si no acude sin avisar con 24 h, no se devuelve). Todo explicado en el aviso legal.</li>
+            <li>Sesiones online: se hacen por <strong>Jitsi Meet</strong> (meet.jit.si). Crea tu sala con un nombre largo y difícil, pega el enlace en <code>js/config.js</code> (campo <code>enlaceVideollamada</code>) y envíaselo a cada persona al confirmar su cita online.</li>
+            <li>Cambiar el texto del hero y los servicios si quieres que suene más a ti. Está escrito para editarse sin miedo.</li>
+        </ul>
+
+        <h2 id="profesional">5. Para que sea profesional de verdad</h2>
+        <h3>Obligatorio (por ley o por el Colegio)</h3>
+        <ul>
+            <li><strong>Número de colegiada visible.</strong> Ya está en el pie de página y en el aviso legal. Sin él, no puedes anunciarte como psicóloga sanitaria.</li>
+            <li><strong>Aviso legal y privacidad rellenos.</strong> Sin eso, la AEPD puede sancionar aunque la web no guarde nada.</li>
+            <li><strong>Nada de testimonios de pacientes.</strong> El código deontológico del COP los desaconseja (y los inventados, directamente prohibidos). Por eso la web tiene la sección "Cómo es la primera sesión" en su lugar: genera la misma confianza sin problemas éticos.</li>
+        </ul>
+        <h3>Muy recomendable</h3>
+        <ul>
+            <li><strong>Una foto tuya real.</strong> Las webs de psicólogos con foto de la persona convierten mucho mejor que las de stock. Una foto sencilla, con luz natural, vale.</li>
+            <li><strong>Email con dominio propio</strong> (abajo hablo del dominio). <code>hola@psicoangela.com</code> da otra imagen que un Gmail.</li>
+            <li><strong>Ficha de Google Business Profile</strong> (gratis): es como la gente encuentra psicólogos en su ciudad. Más importante que cualquier red social.</li>
+            <li><strong>Factura siempre.</strong> La web ya menciona que das factura: es señal de profesionalidad y muchos pacientes la necesitan para su seguro.</li>
+        </ul>
+
+        <h2 id="dominio">6. Tu dominio: psicoangela.com (ya es tuyo)</h2>
+        <p>El dominio <strong>psicoangela.com</strong> ya está comprado y la web ya lo
+        lleva configurado en todas partes (canonical, sitemap y robots.txt). Solo
+        falta conectarlo, y hay dos caminos:</p>
+        <table class="tabla">
+            <tr><th>Opción</th><th>Dificultad</th><th>Coste</th></tr>
+            <tr><td><strong>GitHub Pages</strong> (Settings → Pages → Custom domain)</td><td>Fácil, 10 minutos</td><td>Gratis</td></tr>
+            <tr><td><strong>Cloudflare</strong> (nameservers en Namecheap + Pages de Cloudflare)</td><td>Media, con ayuda 15 minutos</td><td>Gratis</td></tr>
+        </table>
+        <h3>GitHub Pages (el camino simple)</h3>
+        <ol>
+            <li>En el repo: Settings → Pages → Custom domain → escribe <code>psicoangela.com</code> y guarda.</li>
+            <li>En Namecheap (Domain List → Manage → Advanced DNS): crea 4 registros A apuntando a <code>185.199.108.153</code>, <code>185.199.109.153</code>, <code>185.199.110.153</code> y <code>185.199.111.153</code>, y un CNAME de <code>www</code> a tu <code>usuario.github.io</code>.</li>
+            <li>Espera unos minutos y marca "Enforce HTTPS" en GitHub.</li>
+        </ol>
+        <h3>Cloudflare (el camino rápido)</h3>
+        <ol>
+            <li>Cuenta gratuita en cloudflare.com → "Add a site" → psicoangela.com.</li>
+            <li>Cloudflare te da 2 nameservers: los pones en Namecheap (Nameservers → Custom DNS).</li>
+            <li>Despliegue: sube la carpeta en Workers & Pages, o con terminal <code>npx wrangler login</code> y <code>npx wrangler pages deploy .</code></li>
+        </ol>
+        <div class="caja">
+            <strong>Y con el dominio llega el email profesional:</strong>
+            <code>hola@psicoangela.com</code> da otra imagen que un Gmail. Zoho Mail
+            tiene plan gratis para dominio propio, o Namecheap incluye email de
+            pago barato. Cuando lo actives, actualiza el campo <code>email</code>
+            en <code>js/config.js</code> y toda la web lo usará.
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p><a href="index.html" style="color:inherit;">← Volver a la web</a></p>
+        </div>
+    </footer>
+</body>
+</html>
