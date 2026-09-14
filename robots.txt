@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /guia.html
+
+Sitemap: https://psicoangela.com/sitemap.xml
