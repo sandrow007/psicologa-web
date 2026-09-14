@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicóloga en Sevilla | Terapia presencial y online — Ángela M. M</title>
+    <meta name="description" content="Psicóloga sanitaria en Sevilla. Terapia individual, de pareja y online para ansiedad, duelo y etapas difíciles. Reserva 100% local, garantía que se descuenta de la sesión y una web privada sin cookies ni rastreadores. Primera conversación sin compromiso.">
+    <meta name="keywords" content="psicóloga Sevilla, psicóloga sanitaria Sevilla, terapia online España, terapia de pareja Sevilla, ansiedad terapia, duelo psicólogo, psicóloga privacidad, web sin rastreo, civictech, tecnología cívica salud mental">
+    <meta name="author" content="Ángela M. M — Psicóloga sanitaria">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="geo.region" content="ES-SE">
+    <meta name="geo.placename" content="Sevilla">
+    <meta name="theme-color" content="#3f7f92">
+    <!-- Cuando tengáis dominio propio, cambiad esta URL canonical -->
+    <link rel="canonical" href="https://psicoangela.com/">
+
+    <!-- Open Graph (cómo se ve al compartir por WhatsApp/redes) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Psicóloga en Sevilla — Terapia presencial y online">
+    <meta property="og:description" content="Terapia individual, de pareja y online. Reserva local, web privada sin rastreo y test de orientación que no sale de tu dispositivo.">
+    <meta property="og:url" content="https://psicoangela.com/">
+    <meta property="og:site_name" content="Ángela M. M — Psicología">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Psicóloga en Sevilla — Terapia presencial y online">
+    <meta name="twitter:description" content="Terapia individual, de pareja y online. Web privada sin cookies ni rastreadores.">
+
+    <!-- Datos estructurados: así Google entiende que es una psicóloga de Sevilla -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["ProfessionalService", "MedicalBusiness"],
+        "name": "Ángela M. M — Psicología",
+        "description": "Psicóloga sanitaria en Sevilla. Terapia individual, de pareja y online para ansiedad, duelo y procesos de cambio. Web privada sin rastreo: tecnología cívica aplicada a la salud mental.",
+        "url": "https://psicoangela.com/",
+        "telephone": "+34638372596",
+        "priceRange": "60€-220€",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Bizum, Efectivo",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Sevilla",
+            "addressRegion": "Andalucía",
+            "addressCountry": "ES"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 37.3891, "longitude": -5.9845 },
+        "openingHoursSpecification": [
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "20:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "14:00" }
+        ],
+        "medicalSpecialty": "Psychiatric",
+        "availableService": [
+            { "@type": "MedicalTherapy", "name": "Terapia individual" },
+            { "@type": "MedicalTherapy", "name": "Terapia de pareja" },
+            { "@type": "MedicalTherapy", "name": "Terapia online" }
+        ],
+        "knowsAbout": ["psicología", "ansiedad", "duelo", "terapia de pareja", "terapia online", "privacidad digital", "civictech"]
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- BIENVENIDA — portón de entrada con respiración guiada -->
+    <div class="bienvenida" id="bienvenida">
+        <div class="bienvenida-fondo"><span></span><span></span><span></span></div>
+        <div class="respira">
+            <div class="respira-circulo"></div>
+            <p class="respira-texto" id="respiraTexto">inhala...</p>
+        </div>
+        <div class="bienvenida-tarjeta">
+            <h2>Antes de entrar, respira.</h2>
+            <p>
+                Sabemos que llegar hasta aquí no ha sido fácil. Y precisamente por
+                eso, esta web no quiere saber nada de ti: no usa cookies de
+                seguimiento, no guarda tus datos y no te rastrea. Tu historia se
+                cuenta en la consulta, no en un formulario. Lo único que te pedimos
+                es aceptar este pequeño aviso para continuar.
+            </p>
+            <button class="btn-entrar" id="btnEntrar">Acepto, entro tranquil@</button>
+            <p class="mini">
+                Al entrar aceptas la <a href="privacidad.html">política de privacidad</a>
+                y la <a href="cookies.html">política de cookies</a>.
+                Solo guardamos tu aceptación en tu propio navegador.
+            </p>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <a href="#" class="logo" data-cfg="nombre">Ángela M. M</a>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#formacion">Formación</a>
+            <a href="#test">Test</a>
+            <a href="#tarifas">Tarifas</a>
+            <a href="#citas">Citas</a>
+            <a href="#contacto">Contacto</a>
+            <button class="btn-contacto" onclick="document.getElementById('citas').scrollIntoView();">Pedir cita</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-contenido">
+                <h1>Hay cosas que no se arreglan <span>solo aguantando</span></h1>
+                <p>Soy psicóloga sanitaria en Sevilla. Trabajo con personas que llevan demasiado tiempo tirando para adelante en soledad: ansiedad, duelo, relaciones que hacen daño, etapas que no se sabe cómo cruzar. Sesiones online por videollamada, desde donde estés (y presencial en Sevilla cuando abra la consulta).</p>
+                <div class="cta-primaria">
+                    <button class="btn-principal" onclick="document.getElementById('citas').scrollIntoView();">Pedir cita</button>
+                    <button class="btn-secundario" onclick="document.getElementById('test').scrollIntoView();">Hacer el test de 2 minutos</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="shape"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios" id="servicios">
+        <div class="section-titulo">
+            <h2>En qué puedo ayudarte</h2>
+            <p>No hago magia. Hago terapia: entender qué pasa, por qué pasa y qué se puede hacer.</p>
+        </div>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <div class="servicio-numero">01</div>
+                <h3>Terapia individual</h3>
+                <p>Ansiedad, ánimo bajo, autoestima, esa sensación de ir con el freno de mano puesto. Empezamos por entender qué te pasa y después trabajamos con herramientas concretas. No es solo hablar: es salir con algo que usar el lunes.</p>
+            </div>
+            <div class="servicio-card">
+                <div class="servicio-numero">02</div>
+                <h3>Terapia de pareja</h3>
+                <p>Para parejas que se quieren pero ya no se entienden. No se trata de decidir quién tiene razón. Se trata de aprender a hablaros de otra manera.</p>
+            </div>
+            <div class="servicio-card">
+                <div class="servicio-numero">03</div>
+                <h3>Ansiedad y estrés</h3>
+                <p>El cuerpo avisa: sueño malo, taquicardias, la cabeza que no para. La ansiedad se puede entrenar como se entrena un músculo, pero hay que saber cómo.</p>
+            </div>
+            <div class="servicio-card">
+                <div class="servicio-numero">04</div>
+                <h3>Duelo y pérdida</h3>
+                <p>Perder a alguien —o una relación, un trabajo, una vida que ya no está— no se supera con prisas ni con frases hechas. Se atraviesa. Yo acompaño ese cruce.</p>
+            </div>
+            <div class="servicio-card">
+                <div class="servicio-numero">05</div>
+                <h3>Terapia online</h3>
+                <p>La misma terapia, por videollamada. Para quien vive fuera, se mueve mucho o simplemente se siente más cómodo en su casa.</p>
+            </div>
+            <div class="servicio-card">
+                <div class="servicio-numero">06</div>
+                <h3>Orientación vital</h3>
+                <p>Decisiones grandes, cambios de etapa, ese "no sé qué hacer con mi vida" que no cabe en un diagnóstico. A veces hace falta pensar en voz alta con alguien que no esté dentro del problema.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMACIÓN -->
+    <section class="formacion" id="formacion">
+        <div class="formacion-container">
+            <div class="section-titulo">
+                <h2>Mi formación</h2>
+                <p>Lo que he estudiado y sigo estudiando para hacer bien mi trabajo</p>
+            </div>
+            <div class="formacion-grid">
+                <div class="formacion-item">
+                    <h4>Grado en Psicología</h4>
+                    <p>Universidad de [Ciudad]. Aquí pones tu universidad y el año.</p>
+                </div>
+                <div class="formacion-item">
+                    <h4>Máster en Psicología General Sanitaria</h4>
+                    <p>El título que habilita para ejercer como psicóloga sanitaria en España.</p>
+                </div>
+                <div class="formacion-item">
+                    <h4>[Tu especialización]</h4>
+                    <p>Por ejemplo: terapia cognitivo-conductual, EMDR, terapia de pareja...</p>
+                </div>
+                <div class="formacion-item">
+                    <h4>Formación continua</h4>
+                    <p>Cursos y supervisión de casos. En psicología, quien deja de formarse se queda atrás.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEST -->
+    <section class="test-section" id="test">
+        <div class="test-container">
+            <div class="section-titulo">
+                <h2>Test de orientación</h2>
+                <p>Diez preguntas para ver por dónde vas. No es un diagnóstico, es un punto de partida.</p>
+            </div>
+
+            <div class="test-caja" id="testCaja">
+                <p class="test-intro">
+                    Contesta con lo primero que te salga. No hay respuestas buenas ni malas, solo tuyas.
+                    Esto ocurre en tu navegador: nada se envía a ningún servidor. Si luego pides cita
+                    o escribes desde la web, tus respuestas viajarán dentro de tu propio email para que
+                    la psicóloga sepa por dónde empezar —y verás el informe completo antes de enviarlo.
+                </p>
+
+                <div class="test-meta">
+                    <span id="testProgreso">Pregunta 1 de 10</span>
+                    <span id="testPorcentaje">0%</span>
+                </div>
+                <div class="test-barra">
+                    <div class="test-barra-progreso" id="testBarraProgreso"></div>
+                </div>
+
+                <div id="testPreguntas"></div>
+
+                <div class="test-controles" id="testControles">
+                    <button class="btn-atras" id="btnAtras" disabled>← Atrás</button>
+                    <button class="btn-siguiente" id="btnSiguiente" disabled>Siguiente →</button>
+                </div>
+
+                <div class="test-resultado" id="testResultado">
+                    <span class="resultado-nivel" id="resultadoNivel"></span>
+                    <h3 class="resultado-titulo" id="resultadoTitulo"></h3>
+                    <p class="resultado-texto" id="resultadoTexto"></p>
+                    <p class="resultado-cierre" id="resultadoCierre"></p>
+
+                    <button class="btn-reiniciar" id="btnReiniciar">Volver a hacer el test</button>
+                </div>
+
+                <!-- PROTOCOLO -->
+                <div class="protocolo" id="protocolo">
+                    <span class="protocolo-etiqueta">Protocolo de Consulta Abierta</span>
+                    <h3>¿No hay hueco en el calendario?</h3>
+
+                    <p>
+                        Odio las listas de espera impersonales tanto como tú. Si estás aquí,
+                        necesitas hablar con alguien ya. Como paso gran parte del día en consulta
+                        con mis pacientes, es muy probable que si me llamas ahora mismo no pueda
+                        cogerte. Pero no me voy a quedar de brazos cruzados.
+                    </p>
+
+                    <p>
+                        Hagamos un trato directo, de tú a tú. Dale al botón de abajo y mándame
+                        un mensaje de voz o de texto por WhatsApp contándome muy brevemente
+                        tu caso o el resultado de tu test.
+                    </p>
+
+                    <div class="compromiso">
+                        <strong>Mi compromiso contigo:</strong> en cuanto cierre mi última
+                        consulta de hoy, escucharé tu mensaje y te responderé yo misma con
+                        una nota de voz personalizada, dándote una primera pauta y
+                        buscándote un hueco de emergencia. Sin intermediarios, sin robots.
+                    </div>
+
+                    <div class="protocolo-acciones">
+                        <a class="btn-whatsapp"
+                           id="btnWhatsAppTest"
+                           href="https://wa.me/34638372596"
+                           target="_blank"
+                           rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            Enviar mi mensaje de voz al WhatsApp de la psicóloga
+                        </a>
+
+                        <a class="btn-telefono" data-cfg-href="telefono" href="tel:+34638372596">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            ¿Prefieres llamada tradicional? Pulsa aquí
+                        </a>
+                    </div>
+
+                    <p class="protocolo-nota">
+                        Si salta el contestador, no cuelgues. Déjame tu nombre y te devolveré
+                        la llamada en mi próximo descanso.
+                    </p>
+
+                    <p class="protocolo-nota">
+                        <strong>Importante:</strong> WhatsApp y teléfono son solo para
+                        resolver dudas o contarme brevemente tu caso. <strong>Las citas
+                        no se piden por llamada ni por WhatsApp</strong>: solo se reservan
+                        desde el calendario online de esta web, que es donde se ven los
+                        huecos reales y disponibles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARIFAS -->
+    <div class="tarifas-wrapper" id="tarifas">
+        <div class="tarifas-inner">
+            <div class="section-titulo">
+                <h2>Tarifas</h2>
+                <p>Sin letra pequeña. Lo que ves es lo que cuesta.</p>
+            </div>
+            <div class="tarifas-grid">
+                <div class="tarifa-card">
+                    <h3>Sesión individual</h3>
+                    <div class="precio" id="precioIndividual">60€</div>
+                    <div class="precio-divisa" id="notaIndividual">Por sesión de 60 minutos</div>
+                    <ul>
+                        <li>Presencial u online, lo que te venga mejor</li>
+                        <li>Sin compromiso de continuidad</li>
+                        <li>Factura disponible si la necesitas</li>
+                    </ul>
+                    <button class="btn-principal" onclick="reservar(this,'Presencial')">Pedir cita</button>
+                </div>
+                <div class="tarifa-card">
+                    <h3>Bono mensual</h3>
+                    <div class="precio" id="precioMensual">220€</div>
+                    <div class="precio-divisa" id="notaMensual">4 sesiones al mes (te ahorras 20€)</div>
+                    <ul>
+                        <li>La terapia funciona con constancia; el bono la hace más fácil</li>
+                        <li>Mismo día y hora cada semana, reservado para ti</li>
+                        <li>Prioridad si necesitas mover una cita</li>
+                    </ul>
+                    <button class="btn-principal" onclick="reservar(this,'Presencial')">Pedir cita</button>
+                </div>
+                <div class="tarifa-card">
+                    <h3>Sesión online</h3>
+                    <div class="precio" id="precioOnline">60€</div>
+                    <div class="precio-divisa" id="notaOnline">Por sesión de 60 minutos, desde donde tú quieras</div>
+                    <ul>
+                        <li>Misma terapia, por videollamada segura con Jitsi Meet (cifrada y de código abierto)</li>
+                        <li>Recibes el enlace único al confirmar la cita</li>
+                        <li>Sin cuenta ni instalaciones: se abre en el navegador de tu móvil u ordenador</li>
+                        <li>Nunca se graba sin tu consentimiento expreso</li>
+                    </ul>
+                    <button class="btn-principal" onclick="reservar(this,'Online')">Pedir cita</button>
+                </div>
+                <div class="tarifa-card">
+                    <h3>Sesión de pareja</h3>
+                    <div class="precio" id="precioPareja">80€</div>
+                    <div class="precio-divisa" id="notaPareja">Por sesión de 60 minutos</div>
+                    <ul>
+                        <li>Sesiones conjuntas</li>
+                        <li>También alguna sesión individual si hace falta</li>
+                    </ul>
+                    <button class="btn-principal" onclick="reservar(this,'Presencial')">Pedir cita</button>
+                </div>
+            </div>
+            <p id="avisoPago" style="text-align:center; margin-top:2rem; font-size:0.9rem; color:var(--celeste-oscuro);"></p>
+        </div>
+    </div>
+
+    <!-- CITAS + CALENDARIO + PROTOCOLO -->
+    <section class="citas" id="citas">
+        <div class="citas-container">
+            <div class="section-titulo">
+                <h2>Pide tu cita</h2>
+                <p>Mira los huecos disponibles o, si no encuentras uno, escríbeme directamente</p>
+            </div>
+
+            <div class="calendario-reserva">
+                <div class="info-reserva">
+                    <div class="info-box">
+                        <h4>Horarios</h4>
+                        <p>Lunes a viernes: 9:00 - 20:00<br>Sábados: 10:00 - 14:00</p>
+                    </div>
+                    <div class="info-box">
+                        <h4>Dónde</h4>
+                        <p>Online por videollamada, desde donde estés. Consulta presencial en <span data-cfg="ciudad">Sevilla</span>: próximamente.</p>
+                    </div>
+                </div>
+
+                <div class="agenda" id="agenda"></div>
+
+                <div class="cita-condiciones">
+                    <h4>Reservar hueco es gratis. Confirmarlo cuesta <span id="garantiaTexto">5€</span>.</h4>
+                    <p>
+                        <strong>Las citas solo se piden aquí, online.</strong> Ni por
+                        llamada ni por WhatsApp: este calendario es el único sitio donde
+                        se ven los huecos reales y se reservan. El teléfono y WhatsApp
+                        quedan para dudas, no para citas.
+                    </p>
+                    <p>
+                        Cuando te confirme la cita te pediré una garantía de
+                        <strong>5€ por Bizum</strong>. No es un pago extra:
+                        <strong>se descuenta del precio de la sesión</strong> — si acudes,
+                        esa sesión te cuesta 5€ menos.
+                    </p>
+                    <p>
+                        <strong>¿Necesitas factura?</strong> Tras el pago, pídela respondiendo
+                        al correo de confirmación de tu cita y la recibirás en PDF.
+                    </p>
+                    <p>
+                        ¿Necesitas cambiarla? Avísame con <strong>24 horas</strong> y movemos
+                        la cita o te devuelvo la garantía, como prefieras. Pero si no
+                        acudes sin avisar, la garantía no se devuelve: es la compensación
+                        por un hueco que otra persona podría haber usado. Aquí el tiempo
+                        de las dos partes vale.
+                    </p>
+                </div>
+
+                <form class="formulario-contacto formulario-cita" id="formCita">
+                    <div class="form-group">
+                        <label for="citaNombre">Tu nombre (o cómo quieres que te llame)</label>
+                        <input type="text" id="citaNombre" name="nombre" placeholder="Tu nombre" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Modalidad</label>
+                        <div class="modalidad">
+                            <label class="modalidad-opcion" id="opcionPresencial">
+                                <input type="radio" name="modalidad" value="Presencial" checked>
+                                <span>Presencial <small>(consulta en Sevilla)</small></span>
+                            </label>
+                            <label class="modalidad-opcion" id="opcionOnline">
+                                <input type="radio" name="modalidad" value="Online">
+                                <span>Online <small>(videollamada por Jitsi Meet, sin instalar nada)</small></span>
+                            </label>
+                        </div>
+                        <p class="modalidad-nota" id="notaSoloOnline" hidden>De momento todas las sesiones son <strong>online</strong> (videollamada segura, desde donde tú quieras). La consulta presencial en Sevilla llegará pronto.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="citaFecha">Elige día y hora</label>
+                        <input type="datetime-local" id="citaFecha" name="fechahora" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="citaMotivo">¿Qué te trae? (opcional, una frase basta)</label>
+                        <input type="text" id="citaMotivo" name="motivo" placeholder="Por ejemplo: ansiedad, terapia de pareja..." autocomplete="off">
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="check-legal">
+                            <input type="checkbox" id="citaAcepta" required>
+                            <span>Acepto las <a href="aviso-legal.html#reservas" target="_blank">condiciones de reserva</a>:
+                            garantía de 5€ que se descuenta de la sesión y no se devuelve
+                            si no acudo sin avisar con 24 horas.</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="form-submit">Pedir esta cita</button>
+                    <p id="citaAviso" style="font-size:0.85rem; color:var(--aa-enlace); margin-top:0.8rem;"></p>
+                    <p style="font-size:0.8rem; color:#7a8a99; margin-top:0.8rem;">
+                        Al pedir la cita se abre tu propio programa de correo con todo
+                        ya escrito. La solicitud viaja directamente de tu correo al de
+                        la psicóloga: no hay calendarios externos, ni servidores, ni
+                        nada que se guarde en esta web.
+                    </p>
+                </form>
+
+                <div class="separador">o si no hay hueco</div>
+
+                <div class="protocolo visible">
+                    <span class="protocolo-etiqueta">Protocolo de Consulta Abierta</span>
+                    <h3>No hay hueco en el calendario ahora mismo</h3>
+
+                    <p>
+                        Odio las listas de espera impersonales tanto como tú. Si estás aquí,
+                        necesitas hablar con alguien ya. Como paso gran parte del día en consulta
+                        con mis pacientes, es muy probable que si me llamas ahora mismo no pueda
+                        cogerte. Pero no me voy a quedar de brazos cruzados.
+                    </p>
+
+                    <p>
+                        Hagamos un trato directo, de tú a tú. Dale al botón de abajo y mándame
+                        un mensaje de voz o de texto por WhatsApp contándome muy brevemente
+                        tu caso.
+                    </p>
+
+                    <div class="compromiso">
+                        <strong>Mi compromiso contigo:</strong> en cuanto cierre mi última
+                        consulta de hoy, escucharé tu mensaje y te responderé yo misma con
+                        una nota de voz personalizada, dándote una primera pauta y
+                        buscándote un hueco de emergencia. Sin intermediarios, sin robots.
+                    </div>
+
+                    <div class="protocolo-acciones">
+                        <a class="btn-whatsapp"
+                           data-cfg-href="whatsapp"
+                           href="https://wa.me/34638372596?text=Hola%2C%20he%20visto%20que%20no%20hay%20hueco%20en%20el%20calendario.%20Te%20cuento%20brevemente%20mi%20caso%3A%20"
+                           target="_blank"
+                           rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            Enviar mi mensaje de voz al WhatsApp de la psicóloga
+                        </a>
+
+                        <a class="btn-telefono" data-cfg-href="telefono" href="tel:+34638372596">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            ¿Prefieres llamada tradicional? Pulsa aquí
+                        </a>
+                    </div>
+
+                    <p class="protocolo-nota">
+                        Si salta el contestador, no cuelgues. Déjame tu nombre y te devolveré
+                        la llamada en mi próximo descanso.
+                    </p>
+
+                    <p class="protocolo-nota">
+                        <strong>Importante:</strong> WhatsApp y teléfono son solo para
+                        resolver dudas o contarme brevemente tu caso. <strong>Las citas
+                        no se piden por llamada ni por WhatsApp</strong>: solo se reservan
+                        desde el calendario online de esta web, que es donde se ven los
+                        huecos reales y disponibles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRIMERA SESIÓN (en lugar de testimonios inventados) -->
+    <section class="testimonios">
+        <div class="section-titulo">
+            <h2>Cómo es la primera sesión</h2>
+            <p>Para que no vengas con incógnitas</p>
+        </div>
+        <div class="testimonios-grid">
+            <div class="testimonio-card">
+                <div class="testimonio-texto">
+                    Llegas y me cuentas lo que te trae, a tu ritmo. No hay cuestionarios raros ni camilla: es una conversación. Yo escucho y pregunto.
+                </div>
+                <div class="testimonio-autor">Primero: contarlo</div>
+            </div>
+            <div class="testimonio-card">
+                <div class="testimonio-texto">
+                    Te digo con sinceridad si creo que puedo ayudarte. Si tu caso necesita otra especialidad, te lo digo y te oriento hacia dónde ir. No retengo pacientes por retenerlos.
+                </div>
+                <div class="testimonio-autor">Después: valorarlo</div>
+            </div>
+            <div class="testimonio-card">
+                <div class="testimonio-texto">
+                    Si seguimos adelante, sales con una primera pauta y un plan aproximado: qué vamos a trabajar y cómo. Nada de terapias eternas sin rumbo.
+                </div>
+                <div class="testimonio-autor">Y por último: decidir</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contacto-container">
+            <div class="section-titulo">
+                <h2>Escríbeme</h2>
+                <p>Dudas, preguntas, o simplemente no sabes si esto es para ti. Pregunta sin compromiso.</p>
+            </div>
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <div class="contacto-metodo">
+                        <h4>Email</h4>
+                        <p><a data-cfg-href="email" href="mailto:contacto@tudominio.es"><span data-cfg="email">contacto@tudominio.es</span></a></p>
+                    </div>
+                    <div class="contacto-metodo">
+                        <h4>WhatsApp</h4>
+                        <p><a data-cfg-href="whatsapp" href="https://wa.me/34638372596"><span data-cfg="telefonoBonito">+34 638 37 25 96</span></a><br><small>Solo dudas. Las citas no se piden por aquí.</small></p>
+                    </div>
+                    <div class="contacto-metodo">
+                        <h4>Teléfono</h4>
+                        <p><a data-cfg-href="telefono" href="tel:+34638372596"><span data-cfg="telefonoBonito">+34 638 37 25 96</span></a><br><small>Solo dudas. Las citas no se piden por aquí.</small></p>
+                    </div>
+                    <div class="contacto-metodo">
+                        <h4>Tu privacidad</h4>
+                        <p>Dar el paso de hablar con una psicóloga ya es bastante duro como para que encima una web vaya recopilando tus datos. Esta no guarda nada de ti: ni cookies, ni base de datos, ni estadísticas de visitas. Lo que no se guarda no se puede perder ni hackear. <a href="privacidad.html">Lee la política completa</a>.</p>
+                    </div>
+                </div>
+                <form class="formulario-contacto" id="formContacto">
+                    <div class="form-group">
+                        <label for="cNombre">Nombre (o solo cómo quieres que te llame)</label>
+                        <input type="text" id="cNombre" name="nombre" placeholder="Tu nombre" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="cEmail">Tu email (para poder responderte)</label>
+                        <input type="email" id="cEmail" name="email" placeholder="tu@email.com" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="cAsunto">Asunto</label>
+                        <input type="text" id="cAsunto" name="asunto" placeholder="¿En qué puedo ayudarte?">
+                    </div>
+                    <div class="form-group">
+                        <label for="cMensaje">Mensaje</label>
+                        <textarea id="cMensaje" name="mensaje" placeholder="Cuéntame lo que necesites..." required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Enviar mensaje</button>
+                    <p id="formAviso" style="font-size:0.85rem; color:var(--celeste-oscuro); margin-top:0.8rem;"></p>
+                    <p style="font-size:0.8rem; color:#7a8a99; margin-top:0.8rem;">
+                        Al enviar se abre tu propio programa de correo con el mensaje ya escrito.
+                        El email viaja directamente de tu correo al mío: nada se almacena en esta
+                        web ni pasa por servidores de terceros.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Servicios</h4>
+                <a href="#servicios">Terapia individual</a>
+                <a href="#servicios">Terapia de pareja</a>
+                <a href="#servicios">Terapia online</a>
+            </div>
+            <div class="footer-section">
+                <h4>Información</h4>
+                <a href="#formacion">Formación</a>
+                <a href="#test">Test de orientación</a>
+                <a href="#tarifas">Tarifas</a>
+                <a href="#citas">Pedir cita</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="privacidad.html">Política de privacidad</a>
+                <a href="aviso-legal.html">Aviso legal</a>
+                <a href="cookies.html">Política de cookies</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+        <div class="footer-emergencia">
+            <p><strong>¿Estás en una crisis o una emergencia?</strong> Esta web no es un servicio de urgencias y no se atiende en tiempo real. Si estás en peligro o piensas en hacerte daño, llama ahora al <a href="tel:024"><strong>024</strong></a> (línea de atención a la conducta suicida, gratis y 24 h) o al <a href="tel:112"><strong>112</strong></a>. No estás sol@.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="anioFooter">2026</span> <span data-cfg="nombre">Ángela M. M</span> · Colegiada nº <span data-cfg="numColegiada">—</span> · Web sin cookies ni rastreadores.</p>
+            <p class="footer-etica">Tecnología cívica (civictech) aplicada a la salud mental: privacidad por diseño, cero rastreo, cero venta de datos.</p>
+            <button class="acceso-pro" id="btnAcceso" title="Acceso profesional (solo la psicóloga)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13" aria-hidden="true">
+                    <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                Acceso profesional
+            </button>
+        </div>
+    </footer>
+
+    <!-- LOGIN — ventana de acceso para la psicóloga -->
+    <div class="login-modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitulo">
+        <div class="login-caja">
+            <h3 id="loginTitulo">Acceso profesional</h3>
+            <p class="login-sub">Zona privada de la psicóloga. Si estás de visita, no necesitas entrar aquí.</p>
+            <label for="loginUsuario">Usuario</label>
+            <input type="text" id="loginUsuario" autocomplete="off" placeholder="Usuario">
+            <label for="loginPassword">Contraseña</label>
+            <input type="password" id="loginPassword" placeholder="Contraseña">
+            <p class="login-error" id="loginError"></p>
+            <div class="login-botones">
+                <button class="btn-entrar" id="loginEntrar">Entrar</button>
+                <button class="login-cancelar" id="loginCancelar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL NOTA DE PACIENTE (solo visible en modo gestión) -->
+    <div class="login-modal" id="notaModal" role="dialog" aria-modal="true" aria-labelledby="notaTituloModal">
+        <div class="login-caja nota-caja">
+            <h3 id="notaTituloModal">Nota de paciente</h3>
+            <p class="login-sub">Hueco: <span id="notaFechaTxt"></span></p>
+            <input type="hidden" id="notaSlot">
+            <label for="notaTitulo">Paciente (alias o iniciales, nunca apellidos)</label>
+            <input type="text" id="notaTitulo" autocomplete="off" placeholder="Ej.: M. — primera sesión">
+            <label for="notaDescripcion">Motivo / descripción breve</label>
+            <input type="text" id="notaDescripcion" autocomplete="off" placeholder="Ej.: ansiedad laboral, lo deriva su médico">
+            <label for="notaNotas">Notas privadas (para ti)</label>
+            <textarea id="notaNotas" rows="4" placeholder="Impresiones, cosas a recordar antes de la sesión, qué preguntar..."></textarea>
+            <p class="nota-aviso-modal">Se guarda solo en este navegador. No se sube a la web ni a GitHub.</p>
+            <div class="login-botones">
+                <button class="btn-entrar" id="notaGuardar">Guardar nota</button>
+                <button class="login-cancelar" id="notaEliminar">Borrar</button>
+                <button class="login-cancelar" id="notaCancelar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL AJUSTES (solo modo gestión): edita la web sin tocar código -->
+    <div class="login-modal" id="ajustesModal" role="dialog" aria-modal="true" aria-labelledby="ajustesTitulo">
+        <div class="login-caja ajustes-caja">
+            <h3 id="ajustesTitulo">Ajustes de la web</h3>
+            <p class="login-sub">Cambia lo que quieras y pulsa “Generar config.js”. La web te da el archivo listo para pegar en GitHub (editor del lápiz, 2 minutos).</p>
+            <label class="ajuste-check"><input type="checkbox" id="ajPresencial"> <span>Activar sesiones <strong>presenciales</strong> en Sevilla (desactivado = solo online)</span></label>
+            <div class="ajuste-grid">
+                <div><label for="ajTIndividual">Sesión individual</label><input type="text" id="ajTIndividual"></div>
+                <div><label for="ajTMensual">Bono mensual</label><input type="text" id="ajTMensual"></div>
+                <div><label for="ajTOnline">Sesión online</label><input type="text" id="ajTOnline"></div>
+                <div><label for="ajTPareja">Sesión de pareja</label><input type="text" id="ajTPareja"></div>
+            </div>
+            <div class="ajuste-grid">
+                <div><label for="ajGarantia">Garantía de reserva</label><input type="text" id="ajGarantia"></div>
+                <div><label for="ajBizum">Número Bizum</label><input type="text" id="ajBizum"></div>
+            </div>
+            <label for="ajEmail">Email de contacto</label>
+            <input type="text" id="ajEmail">
+            <label for="ajJitsi">Enlace de tu sala Jitsi Meet</label>
+            <input type="text" id="ajJitsi" placeholder="https://meet.jit.si/tu-sala">
+            <div class="login-botones">
+                <button class="btn-entrar" id="ajGenerar">Generar config.js</button>
+                <button class="login-cancelar" id="ajCancelar">Cancelar</button>
+            </div>
+            <p class="login-error" id="ajAviso"></p>
+        </div>
+    </div>
+
+    <!-- MODAL FACTURA (solo modo gestión) -->
+    <div class="login-modal" id="facturaModal" role="dialog" aria-modal="true" aria-labelledby="facturaTitulo">
+        <div class="login-caja ajustes-caja">
+            <h3 id="facturaTitulo">Nueva factura</h3>
+            <p class="login-sub">Se abre lista para imprimir o guardar como PDF (Ctrl/Cmd+P → “Guardar como PDF”) y enviarla por correo.</p>
+            <div class="ajuste-grid">
+                <div><label for="faCliente">Cliente (nombre o alias)</label><input type="text" id="faCliente" autocomplete="off"></div>
+                <div><label for="faClienteNif">NIF del cliente (opcional)</label><input type="text" id="faClienteNif" autocomplete="off"></div>
+            </div>
+            <label for="faConcepto">Concepto</label>
+            <select id="faConcepto">
+                <option value="Garantía de reserva de sesión">Garantía de reserva (5€)</option>
+                <option value="Sesión de psicología individual">Sesión individual</option>
+                <option value="Sesión de psicología online">Sesión online</option>
+                <option value="Sesión de psicología de pareja">Sesión de pareja</option>
+                <option value="Bono mensual (4 sesiones)">Bono mensual</option>
+            </select>
+            <div class="ajuste-grid">
+                <div><label for="faImporte">Importe (€)</label><input type="text" id="faImporte" value="5"></div>
+                <div><label for="faFecha">Fecha</label><input type="date" id="faFecha"></div>
+            </div>
+            <div class="login-botones">
+                <button class="btn-entrar" id="faGenerar">Generar factura</button>
+                <button class="login-cancelar" id="faCancelar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHATBOT — asistente de la web (100% local) -->
+    <button class="chat-boton" id="chatBoton" aria-label="Abrir asistente de la web">
+        <svg class="chat-abrir-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <svg class="chat-cerrar-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+    </button>
+
+    <div class="chat-panel" id="chatPanel">
+        <div class="chat-cabecera">
+            <strong>Asistente de la web</strong>
+            <span>Solo responde sobre la web y las citas · Nada sale de tu dispositivo</span>
+        </div>
+        <div class="chat-mensajes" id="chatMensajes"></div>
+        <div class="chat-chips">
+            <button>¿Cuánto cuesta?</button>
+            <button>¿Cómo pido cita?</button>
+            <button>No hay hueco</button>
+            <button>¿Dónde está la consulta?</button>
+        </div>
+        <div class="chat-entrada">
+            <input type="text" id="chatTexto" placeholder="Escribe tu pregunta..." autocomplete="off">
+            <button id="chatEnviar" aria-label="Enviar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                    <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/bienvenida.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/contacto.js"></script>
+    <script src="js/agenda.js"></script>
+    <script src="js/citas.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script>
+        /* Rellena las tarifas desde CONFIG y gestiona el botón de pago */
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("precioIndividual").textContent = CONFIG.tarifas.individual.precio;
+            document.getElementById("notaIndividual").textContent  = CONFIG.tarifas.individual.nota;
+            document.getElementById("precioMensual").textContent    = CONFIG.tarifas.mensual.precio;
+            document.getElementById("notaMensual").textContent      = CONFIG.tarifas.mensual.nota;
+            document.getElementById("precioOnline").textContent     = CONFIG.tarifas.online.precio;
+            document.getElementById("notaOnline").textContent       = CONFIG.tarifas.online.nota;
+            document.getElementById("precioPareja").textContent     = CONFIG.tarifas.pareja.precio;
+            document.getElementById("notaPareja").textContent       = CONFIG.tarifas.pareja.nota;
+
+            /* Modo solo-online: si la consulta presencial está desactivada
+               en config.js, se oculta esa opción y se marca Online. */
+            if (!CONFIG.presencialActivo) {
+                document.getElementById("opcionPresencial").style.display = "none";
+                document.querySelector('input[name="modalidad"][value="Online"]').checked = true;
+                document.getElementById("notaSoloOnline").hidden = false;
+            }
+
+            /* Aviso de pago: solo Bizum, directo a la psicóloga.
+               La web no procesa pagos de ningún tipo. */
+            document.getElementById("avisoPago").textContent =
+                "Garantía de reserva y sesiones por Bizum al " + CONFIG.bizumNumero + ", una vez confirmada la cita.";
+        });
+
+        /* El botón de cada tarifa: marca la elegida, preselecciona la
+           modalidad en el formulario y baja a la sección de citas. */
+        function reservar(boton, modalidad) {
+            if (modalidad === "Presencial" && !CONFIG.presencialActivo) modalidad = "Online";
+            document.querySelectorAll(".tarifa-card").forEach(c => c.classList.remove("seleccionada"));
+            if (boton) boton.closest(".tarifa-card").classList.add("seleccionada");
+            if (modalidad) {
+                const radio = document.querySelector('input[name="modalidad"][value="' + modalidad + '"]');
+                if (radio) radio.checked = true;
+            }
+            document.getElementById("citas").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+</body>
+</html>
